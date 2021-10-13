@@ -71,3 +71,9 @@
 </p>
 
 #
+
+<p align="center">𝐒𝐩𝐞𝐜𝐢𝐚𝐥 𝐓𝐡𝐚𝐧𝐤𝐬 𝐓𝐨 𝐌𝐲 𝐁𝐫𝐨𝐭𝐡𝐞𝐫 ----> </p>
+
+<a href="https://t.me/Timesisnotwaiting"><img src="https://img.shields.io/badge/𝐙𝐚𝐢𝐝-red?&style=for-the-badge&logo=telegram" width=600px></a></p>
+
+#
