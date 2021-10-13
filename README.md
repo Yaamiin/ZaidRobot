@@ -76,5 +76,6 @@
 
 <p align="center"><a href="https://t.me/Timesisnotwaiting"><img src="https://img.shields.io/badge/Telegram-𝐙𝐚𝐢𝐝-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
 <p align="center"><a href="https://t.me/Aboutdeveloper"><img src="https://img.shields.io/badge/Telegram-𝐓𝐚𝐧𝐚𝐣𝐢-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
+<p align="center"><a href="https://t.me/Shubhanshutya"><img src="https://img.shields.io/badge/Telegram-𝐒𝐡𝐮𝐛𝐡𝐚𝐧𝐬𝐡𝐮-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
 
 #
