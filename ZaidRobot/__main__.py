@@ -74,43 +74,49 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-ʜᴏɪ, ɪ ᴍ ᴛɢɴ ʀᴏʙᴏᴛ
-`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ᴀɴᴅ ɪ ᴍ ᴠᴇʀʏ ᴘᴏᴡᴇʀꜰᴜʟʟ ʙᴏᴛ! ʜɪᴛ` /help
- [❤](https://telegra.ph/file/cab6825dea9263d347831.jpg)
+Hello [🙋🏻‍♂️](https://telegra.ph/file/b013a5f2c29e18d85a163.mp4)
+I am [Zaid Robot](t.me/ZaidRobot)
+
+I am here to help you to manage your telegram groups and I am very powerfull bot with various group management functions !!
+
+⛨ /help : Click here to see all commands
+⛨ /donate : Click here to donate
+⛨ /start : Click here to start the bot
+[❤](https://telegra.ph/file/b013a5f2c29e18d85a163.mp4)
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴛɢɴ ʀᴏʙᴏᴛ ᴛᴏ ᴜʀ ᴄʜᴀᴛ", url="t.me/TGN_Ro_bot?startgroup=true"),
+            text="➕ ADD Zaid To Your Group ➕", url="t.me/TGN_Ro_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ꜱᴏᴜʀᴄᴇ 💫", url=f"https://github.com/Itsunknown-12/TGN-Robot"),
+        InlineKeyboardButton(text="💫 Source 💫", url=f"https://github.com/BotMasterOfficial/ZaidRobot"),
         InlineKeyboardButton(
-            text="ꜱᴜᴘᴘᴏʀᴛ ⚡", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="⚡ Support ⚡", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
     [
-        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ ☑️", url=f"https://t.me/The_Godfather_Network"),
+        InlineKeyboardButton(text="☑️ Updates ☑️", url=f"https://t.me/BotMaster_mkspali"),
         InlineKeyboardButton(
-            text="ᴛɢɴ ᴄʜᴀᴛ", url=f"https://t.me/greatpersonxd"
+            text="☣️ Creator ☣️", url=f"https://t.me/mkspali"
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
+        InlineKeyboardButton(text="🪙 Help & Commands 🪙", callback_data="help_back"),
     ],
 ]
 
 
 HELP_STRINGS = """
 `ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏꜱᴇ ᴀɴ ᴏᴘᴛɪᴏɴ ʙᴇʟᴏᴡ, ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴀ ʙᴜᴛᴛᴏɴ..`
-ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀꜱᴋ ᴀɴʏᴛʜɪɴɢ ɪɴ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [❤️](https://telegra.ph/file/cab6825dea9263d347831.jpg)"""
+ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀꜱᴋ ᴀɴʏᴛʜɪɴɢ ɪɴ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [❤️](https://telegra.ph/file/b013a5f2c29e18d85a163.mp4)"""
 
-START_IMG = "https://telegra.ph/file/63d1ee18f81c92d11210e.mp4"
+START_IMG = "https://telegra.ph/file/b013a5f2c29e18d85a163.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project [Lucifer](t.me/detctective_de) \
- Supporting isnt always financial! [ ɴᴇᴛᴡᴏʀᴋ](https://t.me/Zaid_updates) \
+ You can support the project [Mukesh Solanki](t.me/mksali) \
+ Supporting isnt always financial! [ ɴᴇᴛᴡᴏʀᴋ](https://t.me/BotMasterOfficial) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -224,7 +230,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_video(
-            START_IMG, caption= "<code>TGN is Here For You❤\nI am Awake Since</code>: <code>{}</code>".format(
+            START_IMG, caption= "<code>Zaid is Here For You❤\nI am Awake Since</code>: <code>{}</code>".format(
                 uptime            
             ),
             parse_mode=ParseMode.HTML,
@@ -355,34 +361,34 @@ def help_button(update, context):
 
 
 @run_async
-def layla_about_callback(update, context):
+def zaid_about_callback(update, context):
     query = update.callback_query
-    if query.data == "layla_":
+    if query.data == "zaid_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *TGN Robot*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I am [Zaid Robot](t.mr/ZaidRobot), a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_TGN's licensed under the GNU General Public License v3.0_
-                 \n❍ TGN  @The_Godfather_Network
-                 \n❍ Support Group @Godfathersupport
-                 \n❍ Assistant @TGN\_Assistant.
-                 \nHere is the [💾Repository](https://github.com/Itsunknown-12/TGN-Robot).
+                 \n\n_Zaid's licensed under the GNU General Public License v3.0_
+                 \n❍ Zaid  @BotMaster_mkspali
+                 \n❍ Support Group @BotMasterOfficial
+                 \n❍ Assistant @ZaidRobotAssistant.
+                 \nHere is the [💾Repository](https://github.com/BotMasterOfficial/ZaidRobot).
                  \n\nIf you have any question about bot, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="layla_back")
+                    InlineKeyboardButton(text="Back", callback_data="zaid_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "layla_back":
+    elif query.data == "zaid_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -397,8 +403,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *ZaidRobot*
-                 \nHere is the [Source Code](https://github.com/Itsunknown-12/TGN-Robot) .""",
+            text=""" Hi..🤗 I am [Zaid Robot](t.me/ZaidRobot)
+                 \nHere is the [Source Code](https://github.com/BotMasterOfficial/ZaidRobot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -645,7 +651,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 412094015 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -710,7 +716,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(layla_about_callback, pattern=r"layla_")
+    about_callback_handler = CallbackQueryHandler(zaid_about_callback, pattern=r"zaid_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
