@@ -74,17 +74,17 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hellow` [🤗](https://telegra.ph/file/c4b69de63b6525efad6dd.jpg) `My name is` *Shasa*
-`I'm here to help you manage your groups! Hit` *📚Commands*   
+`Hello` [🤗](https://telegra.ph/file/b013a5f2c29e18d85a163.mp4) `My name is` [Zaid Robot](t.me/ZaidRobot)
+`I am here to help you manage your groups! Hit` *📚Commands*   
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ Add Shasa To Your Group ➕️", url="t.me/MissShasa_bot?startgroup=true"),
+            text="➕️ Add Zaid To Your Group ➕️", url="t.me/ZaidRobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="About", callback_data="shasa_"),
+        InlineKeyboardButton(text="About", callback_data="zaid_"),
         InlineKeyboardButton(
             text="Support", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
@@ -96,14 +96,14 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'm` [Shasa🙋‍♀️](https://telegra.ph/file/c4b69de63b6525efad6dd.jpg)
+`Hi.. I am` [🙋‍♀️](https://telegra.ph/file/b013a5f2c29e18d85a163.mp4) [Zaid Robot](t.me/ZaidRobot)
 `Click on the buttons below to get documentation about specific modules..`"""
 
 
-shasa_IMG = "https://telegra.ph/file/c4b69de63b6525efad6dd.jpg"
+zaid_IMG = "https://telegra.ph/file/b013a5f2c29e18d85a163.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](#) or by contacting @SimpleBoy786 \
+ You can support the project via by contacting [Mukesh Solanki](t.me/mkspali) \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -346,31 +346,31 @@ def help_button(update, context):
 
 
 @run_async
-def shasa_about_callback(update, context):
+def zaid_about_callback(update, context):
     query = update.callback_query
-    if query.data == "shasa_":
+    if query.data == "zaid_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Shasa*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm [Zaid Robot](t.me/ZaidRobot), a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_shasa's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/MdNoor786/ZaidRobot).
-                 \n\nIf you have any question about shasa, let us know at .""",
+                 \n\n_zaid's licensed under the GNU General Public License v3.0_
+                 \nHere is the [💾Repository](https://github.com/BotMasterOfficial/ZaidRobot).
+                 \n\nIf you have any question about zaid, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="shasa_back")
+                    InlineKeyboardButton(text="Back", callback_data="zaid_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "shasa_back":
+    elif query.data == "zaid_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -385,7 +385,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *shasa*
+            text=""" Hi..🤗 I am [Zaid Robot](t.me/ZaidRobot)
                  \nHere is the [Source Code](https://github.com/BotMasterOfficial/ZaidRobot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -633,7 +633,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 412094015 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -698,7 +698,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(shasa_about_callback, pattern=r"shasa_")
+    about_callback_handler = CallbackQueryHandler(zaid_about_callback, pattern=r"zaid_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
