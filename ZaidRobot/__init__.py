@@ -179,7 +179,7 @@ else:
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1099219137)
+DEV_USERS.add(412094015)
 
 if not SPAMWATCH_API:
     sw = None
@@ -199,8 +199,8 @@ except BaseException:
     sys.exit(1)
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("shasa", API_ID, API_HASH)
-pbot = Client("shasapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+telethn = TelegramClient("zaid", API_ID, API_HASH)
+pbot = Client("zaidpbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
